@@ -504,7 +504,7 @@ export default function App() {
             { id: "03", title: "Comece a Evoluir", desc: "Treino dinâmico, acompanhamento real e resultados visíveis. A constância será seu novo hábito." }
           ].map((step, i) => (
             <div key={i} className="relative pt-12">
-              <span className="absolute top-0 left-0 text-[120px] font-display text-muted opacity-25 leading-none select-none">
+              <span className="absolute top-0 left-0 text-[100px] md:text-[120px] font-display text-muted opacity-40 leading-none select-none pointer-events-none">
                 {step.id}
               </span>
               <div className="relative z-10">
