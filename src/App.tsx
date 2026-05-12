@@ -194,6 +194,7 @@ export default function App() {
 
   const navLinks = [
     { name: 'Sobre', href: '#sobre' },
+    { name: 'Espaço', href: '#galeria' },
     { name: 'Método', href: '#metodo' },
     { name: 'Diferenciais', href: '#diferenciais' },
     { name: 'Depoimentos', href: '#depoimentos' },
@@ -452,6 +453,42 @@ export default function App() {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Gallery Section */}
+      <section id="galeria" className="py-24 max-w-7xl mx-auto px-6 overflow-hidden">
+        <SectionDivider />
+        <SectionTitle title="ESTRUTURA DE ALTA PERFORMANCE." subtitle="NOSSO ESPAÇO" />
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="aspect-[4/3] md:aspect-square overflow-hidden bg-surface group"
+          >
+            <img 
+              src="https://i.ibb.co/yntxmmm1/befitness1.jpg" 
+              alt="Equipamentos modernos Be Fitness" 
+              className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+              referrerPolicy="no-referrer"
+            />
+          </motion.div>
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="aspect-[4/3] md:aspect-square overflow-hidden bg-surface group"
+          >
+            <img 
+              src="https://i.ibb.co/hFRRzL2H/befitness2.jpg" 
+              alt="Ambiente de treino Be Fitness" 
+              className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+              referrerPolicy="no-referrer"
+            />
+          </motion.div>
         </div>
       </section>
 
